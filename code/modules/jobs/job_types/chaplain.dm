@@ -30,6 +30,8 @@
 
 	voice_of_god_power = 2 //Chaplains are very good at speaking with the voice of god
 
+	cyberlink = /obj/item/organ/cyberimp/cyberlink/nt_low
+	cybernetics = list(/obj/item/organ/cyberimp/arm/item_set/tablet)
 
 /datum/job/chaplain/after_spawn(mob/living/spawned, client/player_client)
 	. = ..()

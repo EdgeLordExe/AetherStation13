@@ -96,6 +96,11 @@
 	/// String. If set to a non-empty one, it will be the key for the policy text value to show this role on spawn.
 	var/policy_index = ""
 
+	///Cyberlink that is inserted when the player uses Cybernetic Ascension quirk
+	var/cyberlink
+
+	///List of possible cybernetics that are inserted when the player uses Cybernetic Ascension quirk
+	var/list/cybernetics
 
 /datum/job/New()
 	. = ..()
@@ -418,7 +423,7 @@
 
 /mob/living/silicon/robot/apply_prefs_job(client/player_client, datum/job/job)
 	if(mmi)
-		var/organic_name 
+		var/organic_name
 		if(GLOB.current_anonymous_theme)
 			organic_name = GLOB.current_anonymous_theme.anonymous_name(src)
 		else if(player_client.prefs.randomise[RANDOM_NAME] || CONFIG_GET(flag/force_random_names) || is_banned_from(player_client.ckey, "Appearance"))

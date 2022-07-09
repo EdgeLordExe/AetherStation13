@@ -222,7 +222,7 @@
 /obj/item/organ/cyberimp/arm/item_set/toolset
 	name = "integrated toolset implant"
 	desc = "A stripped-down version of the engineering cyborg toolset, designed to be installed on subject's arm. Contain advanced versions of every tool."
-	encode_info = AUGMENT_NT_HIGHLEVEL
+	encode_info = AUGMENT_NT_LOWLEVEL
 	contents = newlist(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/largetank/cyborg,
 		/obj/item/crowbar/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/cyborg)
 
@@ -291,7 +291,7 @@
 	name = "surgical toolset implant"
 	desc = "A set of surgical tools hidden behind a concealed panel on the user's arm."
 	contents = newlist(/obj/item/retractor/augment, /obj/item/hemostat/augment, /obj/item/cautery/augment, /obj/item/surgicaldrill/augment, /obj/item/scalpel/augment, /obj/item/circular_saw/augment, /obj/item/surgical_drapes)
-	encode_info = AUGMENT_NT_HIGHLEVEL
+	encode_info = AUGMENT_NT_LOWLEVEL
 
 /obj/item/organ/cyberimp/arm/item_set/cook
 	name = "kitchenware toolset implant"
@@ -326,13 +326,19 @@
 	name = "chemical toolset implant"
 	desc = "A set of chemical tools hidden behind a concealed panel on the user's arm."
 	contents = newlist(/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/dropper)
-	encode_info = AUGMENT_NT_HIGHLEVEL
+	encode_info = AUGMENT_NT_LOWLEVEL
 
 /obj/item/organ/cyberimp/arm/item_set/atmospherics
 	name = "atmospherics toolset implant"
 	desc = "A set of atmospheric tools hidden behind a concealed panel on the user's arm."
 	contents = newlist(/obj/item/extinguisher,/obj/item/analyzer,/obj/item/crowbar,/obj/item/holosign_creator/atmos)
-	encode_info = AUGMENT_NT_HIGHLEVEL
+	encode_info = AUGMENT_NT_LOWLEVEL
+
+/obj/item/organ/cyberimp/arm/item_set/botany
+	name = "botanical toolset implant"
+	desc = "A set of botanical tools hidden behind a concealed panel on the user's arm."
+	contents = newlist(/obj/item/plant_analyzer,/obj/item/cultivator, /obj/item/secateurs, /obj/item/geneshears)
+	encode_info = AUGMENT_NT_LOWLEVEL
 
 /obj/item/organ/cyberimp/arm/item_set/tablet
 	name = "inbuilt tablet implant"
@@ -468,6 +474,8 @@
 /obj/item/organ/cyberimp/arm/ammo_counter/syndicate
 	encode_info = AUGMENT_SYNDICATE_LEVEL
 
+/obj/item/organ/cyberimp/arm/ammo_counter/nt
+	encode_info = AUGMENT_NT_HIGHLEVEL
 /obj/item/organ/cyberimp/arm/cooler
 	name = "sub-dermal cooling implant"
 	desc = "Special inhand implant that cools you down if overheated."

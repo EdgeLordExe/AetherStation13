@@ -20,6 +20,9 @@ Assistant
 
 	family_heirlooms = list(/obj/item/storage/toolbox/mechanical/old/empty/heirloom, /obj/item/clothing/gloves/cut/heirloom)
 
+	cyberlink = /obj/item/organ/cyberimp/cyberlink/nt_low
+	cybernetics = list(/obj/item/organ/cyberimp/arm/item_set/tablet, /obj/item/organ/cyberimp/arm/item_set/connector)
+
 	mail_goodies = list(
 		/obj/effect/spawner/lootdrop/donkpockets = 10,
 		/obj/item/clothing/mask/gas = 10,

@@ -36,6 +36,8 @@
 
 	voice_of_god_power = 1.4 //Command staff has authority
 
+	cyberlink = /obj/item/organ/cyberimp/cyberlink/nt_high
+	cybernetics = list(/obj/item/organ/cyberimp/arm/ammo_counter/nt,/obj/item/organ/cyberimp/leg/chemplant/emergency,/obj/item/organ/cyberimp/chest/filtration,/obj/item/organ/cyberimp/chest/reviver)
 
 /datum/job/captain/get_captaincy_announcement(mob/living/captain)
 	return "Captain [captain.real_name] on deck!"

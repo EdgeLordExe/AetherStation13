@@ -193,6 +193,15 @@
 	price_min = 300
 	price_max = 500
 
+
+/datum/blackmarket_item/cybernetics/botany
+	name = "botany toolset cybernetic"
+	desc = "Useful for extra-fast herb growing."
+	item = /obj/item/organ/cyberimp/arm/item_set/botany
+	availability_prob = 25
+	price_min = 300
+	price_max = 500
+
 /datum/blackmarket_item/cybernetics/tablet
 	name = "inbuilt tablet implant"
 	desc = "These come in very handy, since you can use them wherever and instead of sitting in your backpack, they are inside of your hand!"

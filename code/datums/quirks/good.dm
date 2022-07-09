@@ -208,3 +208,31 @@
 	mob_trait = TRAIT_VORACIOUS
 	gain_text = "<span class='notice'>You feel HONGRY.</span>"
 	lose_text = "<span class='danger'>You no longer feel HONGRY.</span>"
+
+/datum/quirk/cybernetic_upgrade
+	name = "Cybernetic Ascension"
+	desc = "You decided that you wanted some of that newest bleeding-edge technology embdedded into your body. You arrive at the station with an NT cyberlink and a job-appropriate implant."
+	value = 12
+	mob_trait = TRAIT_TECHNOLOGICAL_ASCENSION
+	gain_text = "<span class='notice'>You feel smugly superior for having implants.</span>"
+	lose_text = "<span class='danger'>You no longer feel superior for having implants.</span>"
+	medical_record_text = "Patient has a record of cybernetic modification."
+
+/datum/quirk/cybernetic_upgrade/add_unique()
+	if(!ishuman(quirk_holder))
+		return
+	var/mob/living/carbon/human/human_holder = quirk_holder
+	var/obj/item/organ/cyberimp/cyberlink/cyberlink
+	var/obj/item/organ/cyberimp/implant
+
+	// Our quirk holder's job
+	var/datum/job/holder_job = human_holder.mind?.assigned_role
+	if(holder_job && LAZYLEN(holder_job.cybernetics))
+		implant = pick(holder_job.cybernetics)
+		cyberlink = holder_job.cyberlink
+	else
+		implant = pick(/obj/item/organ/cyberimp/chest/nutriment,/obj/item/organ/cyberimp/mouth/breathing_tube,/obj/item/organ/cyberimp/arm/item_set/tablet)
+		cyberlink =	/obj/item/organ/cyberimp/cyberlink/nt_low
+
+	(new cyberlink(human_holder)).Insert(human_holder,drop_if_replaced = FALSE)
+	(new implant(human_holder)).Insert(human_holder,drop_if_replaced = FALSE)
