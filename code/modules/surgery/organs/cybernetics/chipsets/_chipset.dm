@@ -30,7 +30,7 @@
 
 /obj/item/chipset/protocol/Initialize()
 	. = ..()
-	name = "Protcol ([protocol_type]) chipset ([protocol])"
+	name = "Protcol chipset ([uppertext("[protocol_type]-[protocol]")])"
 
 /obj/item/chipset/protocol/can_insert(obj/item/organ/cyberimp/cyberlink/link, mob/living/carbon/human/owner)
 	. = ..()

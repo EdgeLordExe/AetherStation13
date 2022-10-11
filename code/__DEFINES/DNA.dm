@@ -309,9 +309,9 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 
 /// Cybernetics defines
 
-#define SECURITY_PROTOCOL "sec_protocol"
-#define ENCODE_PROTOCOL "enc_protocol"
-#define OPERATING_PROTOCOL	"op_protocol"
+#define SECURITY_PROTOCOL "security"
+#define ENCODE_PROTOCOL "encoding"
+#define OPERATING_PROTOCOL	"operating"
 
 #define NO_PROTOCOL 0
 
