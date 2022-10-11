@@ -3609,6 +3609,8 @@
 #include "code\modules\surgery\organs\cybernetics\augments_eyes.dm"
 #include "code\modules\surgery\organs\cybernetics\augments_internal.dm"
 #include "code\modules\surgery\organs\cybernetics\augments_legs.dm"
+#include "code\modules\surgery\organs\cybernetics\chipsets\_chipset.dm"
+#include "code\modules\surgery\organs\cybernetics\chipsets\protocol.dm"
 #include "code\modules\surgery\organs\stomach\_stomach.dm"
 #include "code\modules\surgery\organs\stomach\stomach_ethereal.dm"
 #include "code\modules\surgery\organs\stomach\external\_external_organs.dm"
