@@ -113,6 +113,8 @@
 	slot = ORGAN_SLOT_LINK
 	zone = BODY_ZONE_HEAD
 	w_class = WEIGHT_CLASS_TINY
+	var/chipset_capacity = 0
+	var/list/chipsets = list()
 	var/obj/item/cyberlink_connector/connector
 	var/extended = FALSE
 
